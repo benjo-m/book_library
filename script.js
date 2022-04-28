@@ -12,15 +12,23 @@ let pages = document.getElementById("pages");
 addBtn.addEventListener("click", addBookToLibrary)
 btnSubmit.addEventListener("click", submitBook);
 
-function Book(title, author, pages) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-}
+// function Book(title, author, pages) {
+//     this.title = title;
+//     this.author = author;
+//     this.pages = pages;
+// }
 
-Book.prototype.Info = function() {
-    return `${this.title}, ${this.author}`
-};
+// Book.prototype.Info = function() {
+//     return `${this.title}, ${this.author}`
+// };
+
+class Book {
+    constructor(title, author, pages) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+    }
+}
 
 function makeSquare() {
     let bookSquare = document.createElement("div");
