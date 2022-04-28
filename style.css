@@ -1,0 +1,10 @@
+.bookSquare {
+    width: 100px;
+    height: 200px;
+    background-color: rgb(253, 121, 121);
+    margin: 10px;
+}
+
+#container {
+    display: flex;
+}
