@@ -10,18 +10,29 @@
 </head>
 <body>
     <h1>Library</h1>
-    <button type="button" id="addBtn">Add book</button>
     <p></p>
-    <div id="container"></div>
-    <form id="form" style="visibility: hidden">
+    <table id="table">
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read</th>
+            <th style="color:red">Remove</th>
+        </tr>
+    </table>
+    <br>
+    <button type="button" id="addBtn">Add book</button>
+    <form id="form" style="visibility: hidden;">
         <label for="title">Title:</label><br>
         <input type="text" id="title" required><br>
         <label for="author">Author:</label><br>
         <input type="text" id="author"><br>
         <label for="pages">Pages:</label><br>
         <input type="number" id="pages"><br><br>
+        <label for="read">Have you read the book?</label>
+        <input type="checkbox" id="read"><br><br>
         <button type="button" id="btnSubmit">Submit</button>
     </form>
-
+ 
 </body>
 </html>
