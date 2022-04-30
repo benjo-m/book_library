@@ -1,5 +1,4 @@
 let myLibrary = [];
-let container = document.getElementById("container");
 let addBtn = document.getElementById("addBtn");
 let form = document.getElementById("form");
 let btnSubmit = document.getElementById("btnSubmit");
@@ -11,7 +10,6 @@ let inputPages = document.getElementById('pages')
 let inputRead = document.getElementById('read')
 
 btnSubmit.addEventListener('click', addBook)
-
 
 addBtn.addEventListener('click', () => {
     if(form.style.visibility == 'visible') {
